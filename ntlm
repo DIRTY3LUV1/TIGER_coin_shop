@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Личный кабинет — Тигр Клин</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+<h1>🌟 Тигр Коин — Личный кабинет</h1>
+</header>
+
+<!-- Вход и регистрация -->
+<div id="auth-section" class="auth-section">
+    <button id="show-register">Регистрация</button>
+    <button id="show-login">Войти</button>
+</div>
+
+<!-- Регистрация -->
+<div id="register-form" class="auth-form hidden">
+    <h2>Регистрация</h2>
+    <input type="text" id="register-username" placeholder="Имя пользователя" />
+    <input type="password" id="register-password" placeholder="Пароль" />
+    <button id="register-btn">Зарегистрироваться</button>
+    <button class="close-btn">Отмена</button>
+</div>
+
+<!-- Вход -->
+<div id="login-form" class="auth-form hidden">
+    <h2>Вход</h2>
+    <input type="text" id="login-username" placeholder="Имя пользователя" />
+    <input type="password" id="login-password" placeholder="Пароль" />
+    <button id="login-btn">Войти</button>
+    <button class="close-btn">Отмена</button>
+</div>
+
+<!-- Личный кабинет -->
+<div id="main-section" class="hidden">
+    <div class="profile-header">
+        <h2>Добро пожаловать, <span id="user-name"></span>! 🐯</h2>
+        <button id="logout-btn" class="btn-logout">Выйти</button>
+    </div>
+    
+    <!-- Вкладки -->
+    <div class="tabs">
+        <button class="tabbtn active" data-tab="promo">Промокод</button>
+        <button class="tabbtn" data-tab="wallet">Кошелек</button>
+    </div>
+    
+    <!-- Вкладка промокода -->
+    <div id="promo" class="tabcontent" style="display:block;">
+        <h3>Введите промокод</h3>
+        <input type="text" id="promo-code" placeholder="Промокод" />
+        <button id="apply-promo" class="btn">Активировать</button>
+        <p id="promo-message" class="message"></p>
+    </div>
+    
+    <!-- Вкладка кошелька -->
+    <div id="wallet" class="tabcontent" style="display:none;">
+        <h3>Ваш баланс: <span id="user-balance">0</span> Тигр Коин</h3>
+        <div class="wallet-info">
+            <h4>Кошелек</h4>
+            <p>Баланс валюты: <span id="wallet-balance">0</span> Тигр Коин</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
