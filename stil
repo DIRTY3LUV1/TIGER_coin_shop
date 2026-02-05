@@ -1,0 +1,129 @@
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #f6d365, #fda085);
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+/* Заголовок */
+header h1 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+/* Кнопки */
+button {
+    padding: 12px 25px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 10px;
+    background-color: #ff7e5f;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+    background-color: #eb6750;
+    transform: scale(1.05);
+}
+
+.hidden {
+    display: none;
+}
+
+/* Формы авторизации */
+.auth-form {
+    max-width: 350px;
+    margin: 0 auto 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1em;
+}
+
+/* Основной раздел */
+#main-section {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+}
+
+/* Заголовок в кабинете */
+.profile-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+#user-name {
+    font-weight: bold;
+    font-size: 1.8em;
+    color: #333;
+}
+
+/* Вкладки */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.tabbtn {
+    padding: 12px 20px;
+    border-radius: 8px 8px 0 0;
+    background-color: #ffe0b2;
+    margin: 0 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+.tabbtn.active, .tabbtn:hover {
+    background-color: #ffb74d;
+}
+
+/* Контент вкладок */
+.tabcontent {
+    padding: 20px;
+    background: #ffe0b2;
+    border-radius: 0 8px 8px 8px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+}
+#promo input {
+    padding: 10px;
+    width: calc(100% - 100px);
+    border-radius: 8px;
+    border: 1px solid #aaa;
+}
+#apply-promo {
+    padding: 10px 20px;
+    margin-left: 10px;
+}
+.message {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Кошелек */
+.wallet-info {
+    margin-top: 20px;
+}
+h3 {
+    margin-top: 0;
+}
